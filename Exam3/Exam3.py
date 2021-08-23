@@ -79,7 +79,7 @@ for i in listOfInts:
 print(listOfInts)
 
 #####################################################
-#Section 3 25 marks
+#Section 3 20 marks
 
 #14) create a function which calculates an increase of a given percentage (10)
 # the function should be called calcPerc
@@ -87,21 +87,48 @@ print(listOfInts)
 #it should return the cost plus the percentage increas. 
 #For example if the paramenters are cost = 100 and percentage = 50, it should return 150. 
 #For another example, if the parameters are cost = 50 and percentage = 10, it should return 55.
-#the function requires to take two parameters and return a
+#The percentage value should assume 10% if no value is given
 #test the function here:
+def calcPerc(cost,percentage=10):
+    return cost + cost*(percentage/100)
+print(calcPerc(50,10))
 
-#15) using a method, calculate the length of the stringOne (5)
 
-#16) Another function question
+#15) create a function called caseChanger which takes a string argument written all in lower case
+#and returns a string where any e found, it will convert it to a capital E (10)
+#For example, caseChanger("hello") prints hEllo to the console
+
+def caseChanger(word):
+    for i in word:
+        if i == "e":
+            print(i.upper(),end="")
+        else:
+            print(i,end="")
+caseChanger("hello")
+
 
 ##################################################### 
 #Section 4 25 marks
 
-#16) Tuple question 1
+#16) Create a Tuple that represents a set of students. The tuple should contain the following
+#students: Clark,Cooper,Cox,Horan,Jones,Rai,Smith,White
+students= ("Clark","Cooper","Cox","Horan","Jones","Rai","Smith","White")
+print(students)
 
-#17) Tuple question 2
+#17) create a tuple that represents exam marks with the following data. 
+#These are the respective exam marks for the alphabetically ordered student list
+# 65,66,67,80,90,65,65,93
+scores = (65,66,67,80,90,65,65,93)
+print(scores)
 
 #18) Dictionary question 1 
+#create a dictionary which joins the student with their corresponding mark. 
+#There are a number of ways to achieve this. You will be awarded marks for 
+#the most efficient method
+studentMarks= {}
+for i in range(8):
+    studentMarks[students[i]] = scores[i]
+print(studentMarks)
 
-#19) Dictionary question 2
+
 
