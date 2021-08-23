@@ -108,12 +108,17 @@ caseChanger("hello")
 
 
 ##################################################### 
-#Section 4 25 marks
+#Section 4 30 marks
 
-#16) Create a Tuple that represents a set of students. The tuple should contain the following
-#students: Clark,Cooper,Cox,Horan,Jones,Rai,Smith,White
-students= ("Clark","Cooper","Cox","Horan","Jones","Rai","Smith","White")
+#16)a) Create a list that represents a set of students. The tuple should contain the following
+#students: Clark,Cox,Horan,Rai,Smith,White,Cooper,Jones,,
+nonOrderedStudents= ["Clark","Cox","Horan","Rai","Smith","White","Cooper","Jones"]
+print(nonOrderedStudents)
+#b) create a Tuple with the students now ordered alphabetically
+students = ()
+students = nonOrderedStudents.sort()
 print(students)
+
 
 #17) create a tuple that represents exam marks with the following data. 
 #These are the respective exam marks for the alphabetically ordered student list
